@@ -5,7 +5,7 @@ $.ajax({
                 beforeSend: function (xhr) {
                     xhr.setRequestHeader('X-IBM-Client-Id', '@System.Configuration.ConfigurationManager.AppSettings["X-IBM-Client-Id"]');
                 },
-                url: 'https://apigateway-dev.unitedtractors.com/cst/ums/Account/Authenticate',
+                url: 'https://apigateway-dev.com/Authenticate',
                  data: {
                      UserID: $("#TxtUserID").val(),
                      Password: $("#TxtPassword").val()
